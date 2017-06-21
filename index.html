@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8" />
-        <title></title>
+        <meta charset="UTF-8" />
+        <title>Web 上で diff やれちゃう mergely を使ってみたよ♪ - js do it</title>
+        <link rel="stylesheet" type="text/css" media="screen,print" href="http://jsdo.it/phi/codemirror-3.1/css" />
+        <link rel="stylesheet" type="text/css" media="screen,print" href="http://jsdo.it/phi/mergely-3.2/css" />
+        <script type="text/javascript" src="http://jsdo.it/lib/jquery-1.9.0/js"></script>
+        <script type="text/javascript" src="http://jsdo.it/phi/codemirror-3.1/js"></script>
+        <script type="text/javascript" src="http://jsdo.it/phi/mergely-3.2/js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#compare').mergely({
+                    cmsettings: { readOnly: false, lineWrapping: true }
+                });
+            });
+        </script>
     </head>
     <body>
-        
+        <div id="mergely-resizer">
+            <div id="compare">
+            </div>
+        </div>
     </body>
 </html>
