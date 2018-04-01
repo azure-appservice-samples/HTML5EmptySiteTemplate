@@ -1,11 +1,193 @@
 <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta name="description" content="página do botnildo">
+    <meta name="author" content="leandro silveira">
+    <!-- Le styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-    </head>
-    <body>
-        
-    </body>
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar" style="text-align: justify;">
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-image:url(/images/nildinho.png)">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand">.</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron masthead">
+        <div class="container">
+            <h1>Maratona Bots</h1>
+            <p>Leandro Silveira Alves Moreira</p>
+            <p>
+                <a href="https://www.youtube.com/watch?v=yVb9XOWWXGE&feature=youtu.be" target="_blank" class="btn btn-primary btn-large">Bot Nildo - link Youtube !</a>
+            </p>
+            <a href="https://join.skype.com/bot/5bccf9b5-3713-4a46-b0c1-ce00a852a3cd" target="_blank"> Link para adicionar o bot no skype</a>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="marketing">
+            <div class="row-fluid">
+                <p>
+                    <h3> Objetivo </h3>
+                    A aplicação desenvolvida tem como objetivo criar um aplicativo
+                    para reservas de salas que pode se comunicar com diferentes canais
+                    (ex.: Telegram,Skype, Slack, etc.). um canal de chat será criado e o usuário
+                    irá fazer uma solicitação de reserva de sala informando a data e
+                    o aplicativo retornara as salas disponíveis para aquela data exibindo
+                    algumas descrições importantes como capacidade e uma imagem ilustrativa. ao final da
+                    requisição o sistema irá gerar um protocolo e informar ao usuário sobre a reserva.
+
+                </p>
+            </div>
+            <hr class="soften">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="marketing">
+            <div class="row-fluid">
+                <p>
+                    <h3> Arquitetura </h3>
+                    <ul>
+                        <li>
+                            SDK do Bot Framework Microsoft para C# : ultilizado para construção de uma aplicação REST que faz todo controle de fluxo de mensagem.
+                        </li>
+                        <li>
+                            Microsoft Cognitive Services : Luis  (Usado para identificar as intenções do usuário dentro do diálogo direcionando o mesmo para outros diálogos, sejá ele formulário ou FAQ)
+                        </li>
+                        <li>
+                            Microsoft QnA Maker ultilizado  para criar diálogos baseados em perguntas e respostas.
+                        </li>
+                        <li>
+                            Microsoft Bot Connector  ultilizado para connectar o meu bot nesta página ou em outros canais como skype.
+                        </li>
+                        <li>
+                            Rest API : foi criado uma aplicação webApi no azure para consumo de dados.
+                        </li>
+                        <li>
+                            Canal : Aproveitei a página default do meu bot para ultizar o Web Chat, por se tratar de uma interface mais simples onde não precisa adicionar o bot, ex:skype.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <hr class="soften">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="marketing">
+            <div class="row-fluid">
+                <p>
+                    <h3> Fluxo de Comunicação </h3>
+                    <ul class="masthead-links">
+                        <li>
+                            <b>Tarefa : </b> preencher um formulário  de reserva de salas ou tirar algumas duvidas do usuário quanto as regras para a reserva.
+                        </li>
+                        <li>
+                            <b>Objetivo : </b>descrito no tópico anterior.
+                        </li>
+                        <li>
+                            <b>Motivação do usuário : </b>fazer uma reserva com mais agilidade a qualquer momento.
+                        </li>
+                        <li>
+                            <b>Passos : </b>
+                            <ul>
+                                <li>
+                                    <a> 01 ao entrar no chat  o usuário deverá informar sobre o interesse em fazer a reserva ou  se deseja ter informações referentes as regras para a reserva.</a>
+                                </li>
+                                <li>
+                                    <a> 02 caso o usuário solicite  fazer uma reserva será direcionado dentro do diálogo para um formulário e no final receberá um protocolo de reserva.</a>
+                                </li>
+                                <li>
+                                    <a> 03 caso o usuário solicite saber as informações será direcionado para um diálogo de FAQ.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Previsões :</b> o aplicativo deverá ultilizar serviços de AI para interpretar as intenções de diálogo.
+                        </li>
+                    </ul>
+
+                </p>
+            </div>
+            <hr class="soften">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="row-fluid">
+                <iframe lang="pt-br" height="600" width="400" src="https://webchat.botframework.com/embed/BotNildo?s=GBhbXrufca8.cwA.JSY.XuAAOACPtgER3o8FyVM5oBM7DcU1gO2u8Pqb3GBxUT8&amp;l=pt-br.pt-br" style="background-color: white;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron masthead">
+        <div class="container">
+            <div class="row">
+                <h3> Easter eggs </h3>
+                <p>
+                    <b style="color:#007bff">
+                        Existem alguns easter eggs no chat referentes a tecnologias  de última geração !!! como estocar vento e piadas...
+                        Descubra você mesmo.
+                    </b>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <h5> Documentação adicional</h5>
+            <div class="container">
+                <div class="marketing">
+                    <div class="row-fluid">
+
+                        <p>
+                            <h3> INTENÇÕES </h3>
+                            Intenções representam o objetivo do usuário, ou seja, o propósito pelo qual ele enviou determinada mensagem. Por exemplo, a mensagem “Qual o saldo da minha conta corrente?” poderia representar a intenção consultar_saldo_conta_corrente.
+                            Para cada intenção devem ser fornecidos exemplos que representem aquela intenção, sendo que é recomendável um mínimo de 5 exemplos por intenção. Após isso, será capaz de treinar o modelo preditivo (a partir de algoritmos de aprendizagem de máquina) e com isso prever a intenção desejada pelo usuário. Em um post futuro eu explicarei com mais detalhes este processo de treinamento e classificação.
+                        </p>
+                        <p>
+                            <h3> ENTIDADES </h3>
+                            Entidades representam termos/objetos que são relevantes para o contexto da aplicação ou que fornecem uma clarificação para uma intenção. Por exemplo, caso houvesse uma intenção chamada consultar_saldo_conta, poderia ser necessário clarificar com o usuário se ele está se referindo à uma conta corrente ou conta poupança. Esta desambiguação pode ser feita utilizando entidades.
+                            As entidades são como modelos baseados em regra, no qual ela só será reconhecida caso o usuário tenha digitado exatamente o que foi cadastrado nela. Por exemplo, caso haja a entidade “conta corrente” e o usuário digite “conta corrent”, esta entrada não será reconhecida pela entidade. Apesar disso, as entidades são levadas em consideração no treinamento do modelo.
+                        </p>
+                        <p>
+                            <h3>  DIÁLOGOS </h3>
+                            Os diálogos são responsáveis por guiar o usuário até a resposta final. Eles se baseiam em condições, que podem por exemplo verificar se uma certa intenção e/ou entidade foi reconhecida, e em caso positivo devolver uma resposta para o usuário ou disparar um fluxo, solicitando mais informações.
+                        </p>
+
+                    </div>
+                    <hr class="soften">
+                </div>
+            </div>
+
+            <p>
+                <ul class="masthead-links">
+                    <li>
+                        <a href="https://aka.ms/bots-service-channels">Bot Service Channels</a>
+                    </li>
+                    <li>
+                        <a href="https://aka.ms/bots-service-channels">Bot Service Channels</a>
+                    </li>
+                    <li>
+                        <a href=" https://aka.ms/bots-create-rest-api">Azure REST API</a>
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </footer>
+
+</body>
 </html>
