@@ -1,11 +1,27 @@
-<!DOCTYPE html>
+<script src="https://rtcmulticonnection.herokuapp.com/dist/RTCMultiConnection.min.js"></script>
+<script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-    </head>
-    <body>
-        
-    </body>
+<html>
+	<head>
+	</head>
+	<body>
+	<h1>mensaje</h1>
+	</body>
+	
 </html>
+
+
+<script>
+var connection = new RTCMultiConnection();
+
+// this line is VERY_important
+connection.socketURL = 'http://40.113.192.169:9001/';
+
+// if you want audio+video conferencing
+connection.session = {
+    audio: true,
+    video: true
+};
+
+connection.openOrJoin('your-room-id');
+</script>
