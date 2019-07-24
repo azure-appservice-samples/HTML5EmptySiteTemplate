@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JamKajo</title>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="http://chalarangelo.github.io/htmltemplategenerator/">
+    <!-- Libraries -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- jQuery boilerplate code -->
+    <script type="text/javascript">
+      $(function(){
+        console.log('jQuery: Page loading complete!');
+      });
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- External resources -->
+  </head>
+  <body>
+    <!-- User-defined body -->
+    Payment
+    <!-- Generated template -->
+    <form autocomplete="off">
+      <label for="payment-name">First and last name</label>
+      <input type="text" id="payment-name" placeholder="First and last name">
+      <label for="payment-email">Email</label>
+      <input type="email" id="payment-email" placeholder="email">
+      <label for="payment-phone">Telephone</label>
+      <input type="tel" id="payment-phone" placeholder="telephone">
+      <label for="payment-method">Payment method</label>
+      <select id="payment-method">
+        <option selected>Paypal</option>
+        <option>Credit Card</option>
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
